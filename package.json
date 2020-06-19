@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "commit": "git add * && npx git-cz"
+    "commit": "git add * && git-cz && git push -u origin master"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,7 +41,7 @@
     ]
   },
   "devDependencies": {
-    "git-cz": "^4.7.0",
+    "git-cz": "^4.6.2",
     "commitizen": "^4.1.2",
     "cz-conventional-changelog": "^3.2.0"
   }
