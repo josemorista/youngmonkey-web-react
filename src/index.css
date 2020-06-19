@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Uni Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/Uni-Sans-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Uni Sans Bold';
+  font-style: normal;
+  font-weight: 900;
+  src: url('./fonts/Uni-Sans-Bold.woff');
+}
