@@ -36,21 +36,34 @@ const App: FC = () => {
   return (
     <div>
       <Menu open={menuOpen}>
-        <Grid style={{ height: '92%' }} align="center" spacing={20}>
-          <GridItem xl={6} lg={8} sm={8} xs={12}>
+        <Grid style={{ height: '90%' }} align="center" spacing={20}>
+          <GridItem xl={6} lg={8} sm={8} xs={10}>
             <MenuOptions>
+              <MenuOption style={{paddingLeft: '10%', marginBottom: '10px'}}>Home</MenuOption>
               <MenuOption>Cases</MenuOption>
             </MenuOptions>
           </GridItem>
-          <GridItem xl={6} lg={4} sm={4} xs={12} align='center'>
-            <p style={{ textAlign: 'center', fontSize: '13pt', paddingRight: '2px' }}>
-              <b style={{fontFamily: 'Uni Sans Bold'}}>Contato</b>
-              <br /> 
-              youngmonkey@gmail.com
+          <GridItem xl={6} lg={4} sm={4} xs={12} style={{paddingTop: '25px'}}>
+            <p style={{ textAlign: 'right', fontSize: '13pt', paddingRight: 'calc(2% + 15px)', lineHeight: 1.5 }}>
+              <span style={{fontFamily: 'Uni Sans Bold'}}>Contato Brasil</span>
+              <br/>
+              Vitor Serra
+              <br/>
+              contato.youngmonkey@gmail.com
+              <br/>
+              +55 21 969306922
+            </p>
+            <br />
+            <p style={{ textAlign: 'right', fontSize: '13pt', paddingRight: 'calc(2% + 15px)',lineHeight: 1.5 }}>
+            <span style={{fontFamily: 'Uni Sans Bold'}}>Contact Ireland</span>
+            <br/>
+              Carolina Machado
+              <br/>
+              +353 83 068 2719
             </p>
           </GridItem>
         </Grid>
-        <Grid align='center'>
+        <Grid align='center' spacing={10}>
           <GridItem xs={12} justify='end' style={{display: 'inline', fontSize: '30pt', paddingRight: '2%'}}>
             <MenuIcon
               alt="whatsApp"

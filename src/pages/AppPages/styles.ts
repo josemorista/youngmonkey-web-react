@@ -39,12 +39,13 @@ export const MenuOption = styled.li`
   cursor: pointer;
   transition: 0.5s;
   text-align: center;
-  font-size: 60pt;
-  @media only screen and (min-width: 992px) {
-    clip-path: polygon(0% 0%, 80% 0%, 75.6% 100%, 0% 100%);
-  }
-  @media only screen and (max-width: 800px) and (min-width: 600px) {
-    font-size: 38pt;
+  font-family: Uni Sans Bold;
+  font-size: 80pt;
+  width: 100%;
+  padding-right: 8px;
+  clip-path: polygon(0% 0%, 80% 0%, 74.5% 100%, 0% 100%);
+  @media only screen and (max-width: 992px) and (min-width: 600px) {
+    font-size: 60pt;
   }
   @media only screen and (max-width: 600px) {
     font-size: 40pt;
