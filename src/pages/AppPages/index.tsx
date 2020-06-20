@@ -1,12 +1,12 @@
 import React, { FC, useState, useRef } from 'react';
 import { Menu, MenuBar, MenuButton, MenuOptions, MenuOption, MenuIcon } from './styles';
 import Grid, { GridItem } from '../../components/Grid';
-import Home from './Home';
-import Cases from './Cases';
 
 import facebookIcon from '../../assets/icons/facebook.svg'
 import whatsappIcon from '../../assets/icons/whatsapp.svg'
 import instagramIcon from '../../assets/icons/instagram.svg'
+import { BrowserRouter, Link } from 'react-router-dom';
+import Routes from './Routes';
 
 
 const openInNewTab = (url: string) : void => {
@@ -34,13 +34,17 @@ const App: FC = () => {
   };
 
   return (
-    <div>
+    <BrowserRouter>
       <Menu open={menuOpen}>
         <Grid style={{ height: '90%' }} align="center" spacing={20}>
           <GridItem xl={6} lg={8} sm={8} xs={10}>
             <MenuOptions>
-              <MenuOption style={{paddingLeft: '10%', marginBottom: '10px'}}>Home</MenuOption>
-              <MenuOption>Cases</MenuOption>
+              <Link to='/' onClick={toggleMenu}>
+                <MenuOption style={{paddingLeft: '10%', marginBottom: '10px'}}>Home</MenuOption>
+              </Link>
+              <Link to='/cases' onClick={toggleMenu}>
+                <MenuOption>Cases</MenuOption>
+              </Link>
             </MenuOptions>
           </GridItem>
           <GridItem xl={6} lg={4} sm={4} xs={12} style={{paddingTop: '25px'}}>
@@ -99,8 +103,8 @@ const App: FC = () => {
         <MenuBar ref={bar1Ref}></MenuBar>
         <MenuBar ref={bar2Ref}></MenuBar>
       </MenuButton>
-      <Cases />
-    </div>
+      <Routes />
+    </BrowserRouter>
   );
 };
 

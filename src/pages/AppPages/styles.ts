@@ -40,16 +40,20 @@ export const MenuOption = styled.li`
   transition: 0.5s;
   text-align: center;
   font-family: Uni Sans Bold;
-  font-size: 80pt;
+  font-size: 78pt;
   width: 100%;
   padding-right: 8px;
   clip-path: polygon(0% 0%, 80% 0%, 74.5% 100%, 0% 100%);
+  @media only screen and (max-width: 1200px) and (min-width: 992px) {
+    font-size: 70pt;
+  }
   @media only screen and (max-width: 992px) and (min-width: 600px) {
     font-size: 60pt;
   }
   @media only screen and (max-width: 600px) {
     font-size: 40pt;
   }
+  color: black;
   &:hover {
     color: ${({ theme }) => theme.colors.primary.hoverButtonText};
     background: ${({ theme }) => theme.colors.primary.hoverButton};

@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     margin: 0;
     padding: 0;
-    font-family: Uni Sans;
+    font-family: "Uni Sans";
     text-decoration: none;
   }
 `;
