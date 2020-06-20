@@ -4,15 +4,14 @@ import { ThemeProvider as CustomThemeProvider, createGlobalStyle } from 'styled-
 const theme = {
   colors: {
     primary: {
-      main: '#345CA4',
-      hoverButton: '#345CA4',
-      hoverListItem: '#e8f0fe',
-      hoverButtonText: '#ffffff',
+      main: '#A303C3',
+      hoverButton: '#A303C3',
+      hoverButtonText: '#fdfdfd',
     },
     secondary: {
-      main: '#ffffff',
-      hover: '#ffffff',
-      hoverText: '#345CA4',
+      main: '#ffe646',
+      hover: '#ffe646',
+      hoverText: '#A303C3',
     },
     default: {
       main: '#3b444b',
@@ -38,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     margin: 0;
     padding: 0;
-    font-family: 'Uni Sans';
+    font-family: Uni Sans;
     text-decoration: none;
   }
 `;

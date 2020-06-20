@@ -50,11 +50,21 @@ export const MenuOption = styled.li`
     font-size: 40pt;
   }
   &:hover {
-    color: ${({ theme }) => theme.colors.secondary.main};
-    background: ${({ theme }) => theme.colors.primary.main};
+    color: ${({ theme }) => theme.colors.primary.hoverButtonText};
+    background: ${({ theme }) => theme.colors.primary.hoverButton};
     transform: translate(0, -5px);
   }
 `;
+
+export const MenuIcon = styled.img`
+  width: 40px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: 0.25s;
+  &:hover {
+    transform: translateY(-5px);
+  }
+`
 
 /*@media only screen and (min-width: 992px) {
     clip-path: polygon(0% 0%, 80% 0%, 75% 100%, 0% 100%);
