@@ -1,5 +1,5 @@
 import React, { FC, useRef } from 'react';
-import { Menu, MenuOptions, MenuOption, MenuIcon} from './styles';
+import { Menu, MenuOptions, MenuOption, MenuIcon, ContactText} from './styles';
 import Grid, { GridItem } from '../../../../components/Grid';
 import facebookIcon from '../../../../assets/icons/facebook.svg'
 import whatsappIcon from '../../../../assets/icons/whatsapp.svg'
@@ -44,8 +44,8 @@ const DrawerMenu: FC<{menuOpen: boolean, toggleMenu: () => void}> = ({menuOpen, 
               </Link>
             </MenuOptions>
           </GridItem>
-          <GridItem xl={6} lg={4} sm={4} xs={12} style={{paddingTop: '25px'}}>
-            <p style={{ textAlign: 'right', fontSize: '13pt', paddingRight: 'calc(2% + 15px)', lineHeight: 1.5 }}>
+          <ContactText xl={6} lg={4} sm={4} xs={12} style={{paddingTop: '25px'}}>
+            <p style={{ textAlign: 'right',  paddingRight: 'calc(2% + 15px)', lineHeight: 1.5 }}>
               <span style={{fontFamily: 'Uni Sans Bold'}}>Contato Brasil</span>
               <br/>
               Vitor Serra
@@ -55,14 +55,14 @@ const DrawerMenu: FC<{menuOpen: boolean, toggleMenu: () => void}> = ({menuOpen, 
               +55 21 969306922
             </p>
             <br />
-            <p style={{ textAlign: 'right', fontSize: '13pt', paddingRight: 'calc(2% + 15px)',lineHeight: 1.5 }}>
+            <p style={{ textAlign: 'right',  paddingRight: 'calc(2% + 15px)',lineHeight: 1.5 }}>
             <span style={{fontFamily: 'Uni Sans Bold'}}>Contact Ireland</span>
             <br/>
               Carolina Machado
               <br/>
               +353 83 068 2719
             </p>
-          </GridItem>
+          </ContactText>
         </Grid>
         <Grid align='center' spacing={10}>
           <GridItem xs={12} justify='end' style={{display: 'inline', fontSize: '30pt', paddingRight: '2%'}}>

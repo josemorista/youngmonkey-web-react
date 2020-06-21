@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { GridItem } from '../../../../components/Grid'
 
 export const Menu = styled.div<{ open: boolean }>`
   width: 70%;
@@ -43,7 +44,7 @@ export const MenuOption = styled.li`
     font-size: 60pt;
   }
   @media only screen and (max-width: 600px) {
-    font-size: 40pt;
+    font-size: 32pt;
   }
   color: black;
   &:hover {
@@ -71,6 +72,13 @@ export const MenuBar = styled.div`
   transition: 0.5s;
 `;
 
+
+export const ContactText = styled(GridItem)`
+  font-size: 13pt;
+  @media only screen and (max-width: 600px) {
+    font-size: 10pt;
+  }
+`
 
 /*@media only screen and (min-width: 992px) {
     clip-path: polygon(0% 0%, 80% 0%, 75% 100%, 0% 100%);
