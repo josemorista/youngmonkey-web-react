@@ -129,7 +129,7 @@ const Cases: FC = () => {
           <GridItem xs={12} justify='center'>Cases</GridItem>
         </CasesTitle>
         <Grid style={{padding: '10%', paddingTop: '35%'}} spacing={10}>
-          {sortedTiles?.map((tile, index) => (<Tile ref={index === 0 ? casesGridRef : null} onClick={() => {setOpenTile(tile)}} tileImg={tile.img} key={tile._id} {...tile.cols}><Label align='center'><GridItem xs={2} /><GridItem justify='center' xs={8} style={{fontSize: '20pt', fontFamily: 'Uni Sans', textAlign: 'center'}}>{tile.names?.ptBr || ''}</GridItem></Label></Tile>))}
+          {sortedTiles?.map((tile, index) => (<Tile ref={index === 0 ? casesGridRef : null} onClick={() => {setOpenTile(tile)}} tileImg={tile.img} key={tile._id} {...tile.cols}><Label align='center'><GridItem xs={1} /><GridItem justify='center' xs={10} style={{fontSize: '20pt', fontFamily: 'Uni Sans', textAlign: 'center'}}>{tile.descriptions?.ptBr || ''}</GridItem></Label></Tile>))}
         </Grid>
       </div>
       {openTile ? 
@@ -143,7 +143,7 @@ const Cases: FC = () => {
             <ClickAway onClose={() => {
               setOpenTile(null);
             }}>
-              <video src={openTile.video} autoPlay muted style={{width: '100%', height: 'auto', padding: '5px', backgroundColor: 'white'}}/>
+              <video src={openTile.video} autoPlay controls loop style={{width: '100%', height: 'auto', padding: '5px', backgroundColor: 'white'}}/>
             </ClickAway>
           </GridItem>
         </Grid>
