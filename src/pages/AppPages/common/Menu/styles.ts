@@ -13,14 +13,6 @@ export const Menu = styled.div<{ open: boolean }>`
   transform: translate(${({ open }) => (open ? '0%' : '100%')});
 `;
 
-export const MenuBar = styled.div`
-  width: 30px;
-  height: 5px;
-  background-color: black;
-  margin: 5px 0;
-  transition: 0.5s;
-`;
-
 export const MenuButton = styled.div`
   position: fixed;
   top: 1.5%;
@@ -70,6 +62,15 @@ export const MenuIcon = styled.img`
     transform: translateY(-5px);
   }
 `
+
+export const MenuBar = styled.div`
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  margin: 5px 0;
+  transition: 0.5s;
+`;
+
 
 /*@media only screen and (min-width: 992px) {
     clip-path: polygon(0% 0%, 80% 0%, 75% 100%, 0% 100%);

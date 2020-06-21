@@ -12,7 +12,8 @@ const loading = keyframes`
 
 export const Tile = styled(GridItem)<{tileImg: string}>`
   cursor: pointer;
-  height: 320px; 
+  height: 320px;
+  position: relative;
   background-image: ${({tileImg}) => `url(${tileImg})`};
   background-size: cover; 
   background-position: center center;
@@ -21,6 +22,9 @@ export const Tile = styled(GridItem)<{tileImg: string}>`
     z-index: 2;
     transform: scale(1.1);
   }
+  @media only screen and (max-width: 600px) {
+    height: 250px;
+  };
 `
 
 export const Cases = styled.div<{img: string}>`
@@ -44,3 +48,26 @@ export const ParallaxElement = styled(Cases)`
   left: 0;
   z-index: 1;
 `;
+
+export const Label = styled(Grid)`
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: 'flex';
+  justify-self: 'center';
+  height: 100%;
+  &:hover {
+    transition: 0.25s;
+    opacity: 1;
+  }
+`
+
+export const CasesTitle = styled(Grid)`
+  text-align: center;
+  color: white;
+  font-size: 100pt;
+  padding-top: 5%;
+  @media only screen and (max-width: 600px) {
+    font-size: 50pt;
+  };
+`

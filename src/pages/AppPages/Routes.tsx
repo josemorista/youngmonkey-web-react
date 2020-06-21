@@ -5,7 +5,7 @@ import Cases from './Cases';
 
 const Routes : FC = () =>{
   return <>
-    <Route path='/' exact component={Home} />
+    <Route path='/' exact component={Home}/>
     <Route path='/cases' exact component={Cases} />
   </>
 }
