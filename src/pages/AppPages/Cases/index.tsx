@@ -121,17 +121,17 @@ const Cases: FC = () => {
       <ParallaxElement
         ref={monkeyRef}
         img={`url(${monkey})`}
-        style={{zIndex: 16}}
+        style={{zIndex: 1}}
         
       />
-      <div style={{zIndex: 15, position: 'relative'}}>
+      <div style={{ position: 'relative', zIndex: 0}}>
         <CasesTitle >
           <GridItem xs={12} justify='center'>Cases</GridItem>
         </CasesTitle>
-        <Grid style={{padding: '10%', paddingTop: '35%'}} spacing={10}>
+      </div>
+      <Grid style={{position: 'relative', padding: '10%', paddingTop: '35%', zIndex: 15}} spacing={10}>
           {sortedTiles?.map((tile, index) => (<Tile ref={index === 0 ? casesGridRef : null} onClick={() => {setOpenTile(tile)}} tileImg={tile.img} key={tile._id} {...tile.cols}><Label align='center'><GridItem xs={1} /><GridItem justify='center' xs={10}>{tile.descriptions?.ptBr || ''}</GridItem></Label></Tile>))}
         </Grid>
-      </div>
       {openTile ? 
       <Modal >
         <Grid align='center' style={{height: '100%'}}>
