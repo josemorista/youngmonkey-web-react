@@ -56,6 +56,14 @@ export const Label = styled(Grid)`
   display: 'flex';
   justify-self: 'center';
   height: 100%;
+  ${GridItem} {
+    font-size: 20pt;
+    font-family: 'Uni Sans';
+    text-align: center;
+    @media only screen and (max-width: 600px) {
+      font-size: 15pt;
+  };
+  }
   &:hover {
     transition: 0.25s;
     opacity: 1;

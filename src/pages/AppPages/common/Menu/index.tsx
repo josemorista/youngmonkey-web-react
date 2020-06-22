@@ -50,7 +50,7 @@ const DrawerMenu: FC<{menuOpen: boolean, toggleMenu: () => void}> = ({menuOpen, 
               <br/>
               Vitor Serra
               <br/>
-              contato.youngmonkey@gmail.com
+              vitor.serra@ym.video
               <br/>
               +55 21 969306922
             </p>
@@ -59,6 +59,8 @@ const DrawerMenu: FC<{menuOpen: boolean, toggleMenu: () => void}> = ({menuOpen, 
             <span style={{fontFamily: 'Uni Sans Bold'}}>Contact Ireland</span>
             <br/>
               Carolina Machado
+              <br/>
+              carolina@ym.video
               <br/>
               +353 83 068 2719
             </p>

@@ -111,17 +111,17 @@ const Cases: FC = () => {
       <Menu menuOpen={menuOpen} toggleMenu={toggleMenu}  />
       <MenuButton menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuColor} />
       <ParallaxElement
+        ref={buildingsRef}
+        img={`url(${buildings})`}
+      />
+      <ParallaxElement
         ref={transportsRef}
         img={`url(${transports})`}
        />
-       <ParallaxElement
-        ref={buildingsRef}
-        img={`url(${buildings})`}
-        
-      />
       <ParallaxElement
         ref={monkeyRef}
         img={`url(${monkey})`}
+        style={{zIndex: 16}}
         
       />
       <div style={{zIndex: 15, position: 'relative'}}>
@@ -129,7 +129,7 @@ const Cases: FC = () => {
           <GridItem xs={12} justify='center'>Cases</GridItem>
         </CasesTitle>
         <Grid style={{padding: '10%', paddingTop: '35%'}} spacing={10}>
-          {sortedTiles?.map((tile, index) => (<Tile ref={index === 0 ? casesGridRef : null} onClick={() => {setOpenTile(tile)}} tileImg={tile.img} key={tile._id} {...tile.cols}><Label align='center'><GridItem xs={1} /><GridItem justify='center' xs={10} style={{fontSize: '20pt', fontFamily: 'Uni Sans', textAlign: 'center'}}>{tile.descriptions?.ptBr || ''}</GridItem></Label></Tile>))}
+          {sortedTiles?.map((tile, index) => (<Tile ref={index === 0 ? casesGridRef : null} onClick={() => {setOpenTile(tile)}} tileImg={tile.img} key={tile._id} {...tile.cols}><Label align='center'><GridItem xs={1} /><GridItem justify='center' xs={10}>{tile.descriptions?.ptBr || ''}</GridItem></Label></Tile>))}
         </Grid>
       </div>
       {openTile ? 

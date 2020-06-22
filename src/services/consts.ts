@@ -1,1 +1,1 @@
-export const apiURL = 'https://youngmonkey.com.br'
+export const apiURL = 'https://api.ym.video'
