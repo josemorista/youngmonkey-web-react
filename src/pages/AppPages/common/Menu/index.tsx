@@ -1,5 +1,5 @@
 import React, { FC, useRef } from 'react';
-import { Menu, MenuOptions, MenuOption, MenuIcon, ContactText} from './styles';
+import { Menu, MenuOptions, MenuOption, MenuIcon, ContactText, ContactNumberButton} from './styles';
 import Grid, { GridItem } from '../../../../components/Grid';
 import facebookIcon from '../../../../assets/icons/facebook.svg'
 import whatsappIcon from '../../../../assets/icons/whatsapp.svg'
@@ -52,7 +52,13 @@ const DrawerMenu: FC<{menuOpen: boolean, toggleMenu: () => void}> = ({menuOpen, 
               <br/>
               vitor.serra@ym.video
               <br/>
+              <ContactNumberButton 
+                
+                onClick={() => {
+                openInNewTab('https://api.whatsapp.com/send?phone=5521969306922&text=Olá,%20Gostaria%20de%20saber%20mais%20sobre%20o%20trabalho%20de%20vocês')
+              }}>
               +55 21 969306922
+              </ContactNumberButton>
             </p>
             <br />
             <p style={{ textAlign: 'right',  paddingRight: 'calc(2% + 15px)',lineHeight: 1.5 }}>
@@ -62,7 +68,13 @@ const DrawerMenu: FC<{menuOpen: boolean, toggleMenu: () => void}> = ({menuOpen, 
               <br/>
               carolina@ym.video
               <br/>
+              <ContactNumberButton
+                
+                onClick={() => {
+                  openInNewTab('https://api.whatsapp.com/send?phone=353830682719&text=Hello,%20i%20would%20like%20to%20know%20more%20about%20your%20work')
+                }}>
               +353 83 068 2719
+              </ContactNumberButton>
             </p>
           </ContactText>
         </Grid>
@@ -72,7 +84,7 @@ const DrawerMenu: FC<{menuOpen: boolean, toggleMenu: () => void}> = ({menuOpen, 
               alt="whatsApp"
               src={whatsappIcon}
               onClick={() => {
-                openInNewTab('https://api.whatsapp.com/send?1=pt_BR&phone=5521983030579&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre')
+                openInNewTab('https://api.whatsapp.com/send?phone=5521969306922&text=Olá,%20Gostaria%20de%20saber%20mais%20sobre%20o%20trabalho%20de%20vocês')
               }}
             />
             <MenuIcon

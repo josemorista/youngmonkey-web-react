@@ -80,6 +80,14 @@ export const ContactText = styled(GridItem)`
   }
 `
 
+export const ContactNumberButton = styled.div`
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    transform: translateY(-2px);
+  }
+`;
+
 /*@media only screen and (min-width: 992px) {
     clip-path: polygon(0% 0%, 80% 0%, 75% 100%, 0% 100%);
   }*/
