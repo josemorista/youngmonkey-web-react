@@ -55,9 +55,9 @@ const DrawerMenu: FC<{menuOpen: boolean, toggleMenu: () => void}> = ({menuOpen, 
               <ContactNumberButton 
                 
                 onClick={() => {
-                openInNewTab('https://api.whatsapp.com/send?phone=5521969306922&text=Olá,%20Gostaria%20de%20saber%20mais%20sobre%20o%20trabalho%20de%20vocês')
+                openInNewTab('https://api.whatsapp.com/send?phone=5521985715844&text=Olá,%20Gostaria%20de%20saber%20mais%20sobre%20o%20trabalho%20de%20vocês')
               }}>
-              +55 21 969306922
+              +55 21 985715844
               </ContactNumberButton>
             </p>
             <br />
@@ -84,7 +84,7 @@ const DrawerMenu: FC<{menuOpen: boolean, toggleMenu: () => void}> = ({menuOpen, 
               alt="whatsApp"
               src={whatsappIcon}
               onClick={() => {
-                openInNewTab('https://api.whatsapp.com/send?phone=5521969306922&text=Olá,%20Gostaria%20de%20saber%20mais%20sobre%20o%20trabalho%20de%20vocês')
+                openInNewTab('https://api.whatsapp.com/send?phone=5521985715844&text=Olá,%20Gostaria%20de%20saber%20mais%20sobre%20o%20trabalho%20de%20vocês')
               }}
             />
             <MenuIcon
