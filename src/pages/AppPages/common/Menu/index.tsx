@@ -60,22 +60,6 @@ const DrawerMenu: FC<{menuOpen: boolean, toggleMenu: () => void}> = ({menuOpen, 
               +55 21 985715844
               </ContactNumberButton>
             </p>
-            <br />
-            <p style={{ textAlign: 'right',  paddingRight: 'calc(2% + 15px)',lineHeight: 1.5 }}>
-            <span style={{fontFamily: 'Uni Sans Bold'}}>Contact Ireland</span>
-            <br/>
-              Carolina Machado
-              <br/>
-              carolina@ym.video
-              <br/>
-              <ContactNumberButton
-                
-                onClick={() => {
-                  openInNewTab('https://api.whatsapp.com/send?phone=353830682719&text=Hello,%20i%20would%20like%20to%20know%20more%20about%20your%20work')
-                }}>
-              +353 83 068 2719
-              </ContactNumberButton>
-            </p>
           </ContactText>
         </Grid>
         <Grid align='center' spacing={10}>
@@ -84,7 +68,7 @@ const DrawerMenu: FC<{menuOpen: boolean, toggleMenu: () => void}> = ({menuOpen, 
               alt="whatsApp"
               src={whatsappIcon}
               onClick={() => {
-                openInNewTab('https://api.whatsapp.com/send?phone=5521985715844&text=Olá,%20Gostaria%20de%20saber%20mais%20sobre%20o%20trabalho%20de%20vocês')
+                openInNewTab('https://api.whatsapp.com/send?phone=5521969306922&text=Olá,%20Gostaria%20de%20saber%20mais%20sobre%20o%20trabalho%20de%20vocês')
               }}
             />
             <MenuIcon
