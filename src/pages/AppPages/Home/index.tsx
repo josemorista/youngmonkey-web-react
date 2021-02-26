@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 //import introVideo from '../../../assets/videos/intro.mp4';
-import bg from '../../../assets/imgs/BG.png';
+import bg from '../../../assets/imgs/BGHome.png';
 import logo from '../../../assets/imgs/logo.png';
 import { Link } from 'react-router-dom';
 import Menu from '../common/Menu';
