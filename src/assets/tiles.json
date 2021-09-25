@@ -1,0 +1,178 @@
+[
+	{
+		"_id": "5cec5c25d2c5093b3014b070",
+		"cols": {
+			"sm": 5
+		},
+		"img": "Ah5sWG7.gif",
+		"video": "O GLOBO.mp4",
+		"position": 3,
+		"names": {
+			"ptBr": "Globo",
+			"enUs": "Globo"
+		},
+		"descriptions": {
+			"ptBr": "VINHETA CARNAVAL 2019\n- O GLOBO -",
+			"enUs": "VIGNETTE CARNAVAL 2019\n- O GLOBO -"
+		}
+	},
+	{
+		"_id": "5ceee0f86b07ff0017a74e4e",
+		"cols": {
+			"sm": 4
+		},
+		"subtitle": [],
+		"names": {
+			"ptBr": "Stories-Formula",
+			"enUs": "Stories-Formula"
+		},
+		"img": "d3w0p3w.gif",
+		"video": "CURSO FORMULA - Stories.mp4",
+		"position": 8,
+		"descriptions": {
+			"ptBr": "STORIES CURSO\n-Fórmula-",
+			"enUs": "STORIES COURSE\n-Fórmula-"
+		}
+	},
+	{
+		"_id": "5ceee19b6b07ff0017a74e4f",
+		"cols": {
+			"sm": 3
+		},
+		"names": {
+			"ptBr": "App-Jardim Botânico",
+			"enUs": "App-Jardim Botânico"
+		},
+		"img": "aCEQdvH.gif",
+		"position": 9,
+		"video": "JARDIM BOTANICO - Apresentacao do App.mp4",
+		"descriptions": {
+			"ptBr": "APRESENTAÇÃO APLICATIVO Jardim Botânico\n- Qvista -",
+			"enUs": "APPLICATION PRESENTATION Jardim Botânico\n- Qvista -"
+		}
+	},
+	{
+		"_id": "5ceee2b26b07ff0017a74e50",
+		"cols": {
+			"sm": 4
+		},
+		"names": {
+			"ptBr": "App-Ministério da Saúde",
+			"enUs": "App-Ministério da Saúde"
+		},
+		"position": 11,
+		"img": "EllUs4v.gif",
+		"video": "EMENDA PARLAMENTAR - Apresentacao do App.mp4",
+		"descriptions": {
+			"ptBr": "APRESENTAÇÃO APLICATIVO\n- Qvista -",
+			"enUs": "APPLICATION PRESENTATION \n- Qvista -"
+		}
+	},
+	{
+		"_id": "5ceee3bb6b07ff0017a74e51",
+		"cols": {
+			"sm": 5
+		},
+		"names": {
+			"ptBr": "Dona Délia",
+			"enUs": "Dona Délia"
+		},
+		"position": 13,
+		"img": "0uA1QqH.jpg",
+		"video": "DONA DELIA - Comercial Dia da Mulher.mp4",
+		"descriptions": {
+			"ptBr": "PROMOCIONAL DIA DA MULHER\n- Ag. Brtn -",
+			"enUs": "PROMOTIONAL WOMEN'S DAY\n- Ag. Brtn -"
+		}
+	},
+	{
+		"_id": "5ceee5796b07ff0017a74e53",
+		"cols": {
+			"sm": 6
+		},
+		"position": 17,
+		"names": {
+			"ptBr": "Maytê"
+		},
+		"img": "ucprUWO.gif",
+		"video": "MAYTE CORREA - Stories - Flyer Animado.mp4",
+		"descriptions": {
+			"ptBr": "STORIES SHOW MAYTÊ CORRÊA\n- Maytê -"
+		}
+	},
+	{
+		"_id": "5ceee6bb6b07ff0017a74e55",
+		"cols": {
+			"sm": 6
+		},
+		"names": {
+			"ptBr": "vinheta-formula"
+		},
+		"img": "3armZZS.gif",
+		"position": 19,
+		"video": "CURSO FORMULA - Vinheta.mp4",
+		"descriptions": {
+			"ptBr": "VINHETA CURSO \n-Fórmula-"
+		}
+	},
+	{
+		"_id": "5d60179bf883ca73d8f154e3",
+		"cols": {
+			"sm": 4
+		},
+		"names": {
+			"ptBr": "Back To The Future Pixel art"
+		},
+		"video": "Back o the future pixelart.mp4",
+		"position": 2,
+		"img": "PoRLPLB.jpg",
+		"descriptions": {
+			"ptBr": "BACK TO THE FUTURE PIXEL ART"
+		}
+	},
+	{
+		"_id": "5e6984aed72fc07e45466b22",
+		"cols": {
+			"sm": 3
+		},
+		"names": {
+			"ptBr": "Queimão de oferta"
+		},
+		"img": "0aQB8o7.gif",
+		"video": "VT Promo Verao.mp4",
+		"position": -1,
+		"descriptions": {
+			"ptBr": "VT QEIMÂO DE OFERTAS\n- Ag. Brtn -"
+		}
+	},
+	{
+		"_id": "5e6986ead72fc07e45466b23",
+		"cols": {
+			"sm": 5
+		},
+		"position": 6,
+		"names": {
+			"ptBr": "Lila Liloca"
+		},
+		"img": "7YScKjP.gif",
+		"video": "Vinheta Lila Liloca.mp4",
+		"descriptions": {
+			"ptBr": "VINHETA CANAL INFANTIL\n- Lila Liloca -"
+		}
+	},
+	{
+		"_id": "5e6998b7d72fc07e45466b24",
+		"cols": {
+			"sm": 3
+		},
+		"names": {
+			"ptBr": "Qual Oferta"
+		},
+		"img": "YRnaM1G.jpg",
+		"video": "Stories Qual Oferta.mp4",
+		"descriptions": {
+			"ptBr": "QUAL OFERTA\n- O Globo -"
+		},
+		"position": 5
+	}
+]

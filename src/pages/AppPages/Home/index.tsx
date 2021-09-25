@@ -1,6 +1,6 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useState, useEffect, useRef } from 'react';
 import styled, { keyframes } from 'styled-components';
-//import introVideo from '../../../assets/videos/intro.mp4';
+import introVideo from '../../../assets/videos/intro.mp4';
 import bg from '../../../assets/imgs/BGHome.png';
 import logo from '../../../assets/imgs/logo.png';
 import { Link } from 'react-router-dom';
@@ -32,7 +32,7 @@ const loadLetUsHelp = keyframes`
     }
 `;
 
-const Intro = styled.img`
+const Intro = styled.video`
   animation-name: ${loadIntro};
   animation-duration: 1.2s;
   animation-timing-function: cubic-bezier(0, 0, 0.1, 1);
@@ -79,7 +79,7 @@ const Logo = styled.img`
 
 const Home: FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  /*const videoRef = useRef<HTMLVideoElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   useEffect(() => {
     const timeout = setTimeout(() => {
       if (videoRef.current) {
@@ -87,7 +87,7 @@ const Home: FC = () => {
       }
     }, 1200);
     return () => clearTimeout(timeout);
-  }, []);*/
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -100,10 +100,10 @@ const Home: FC = () => {
       <Link to={'/'}>
         <Logo src={logo} alt="Young Monkey" />
       </Link>
-      {/*<Intro loop muted id="myVideo" ref={videoRef}>
+      <Intro loop muted id="myVideo" ref={videoRef}>
         <source src={introVideo} type="video/mp4" />
-      </Intro>*/}
-      <Intro src={bg} alt='home' />
+      </Intro>
+      {/*<Intro src={bg} alt='home' />*/}
     </>
   );
 };
